@@ -1,8 +1,8 @@
 import time
-from scenes import intro
-from scenes import s1o1
-from scenes import s1o2
-from scenes import s2o1
+from Chapter1 import intro
+from Chapter1 import s1o1
+from Chapter1 import s2o1
+from Chapter1 import s3o1
 
 def start():
     print("21 DAYS")
