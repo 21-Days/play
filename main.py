@@ -1,5 +1,5 @@
 import time
-import intro
+from scenes import intro
 from scenes import s1o1
 from scenes import s1o2
 from scenes import s2o1
