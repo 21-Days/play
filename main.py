@@ -1,5 +1,5 @@
 import time
-from Chapter1 import intro
+import intro
 from Chapter1 import s1o1
 from Chapter1 import s2o1
 from Chapter1 import s3o1
@@ -28,8 +28,8 @@ def start():
         while direction.contains().upper() != 'C' and direction.contains().upper() != 'S':
             direction = response = input("Which way will you go?")
         if direction.upper() == 'CITY' or direction.lower() == 'city':
-            s1o2.way1()
+            s2o1.way1()
         else:
-            s1o2.way2()
+            s2o1.way2()
 class main():
     start()
