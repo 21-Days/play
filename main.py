@@ -4,6 +4,10 @@ from Chapter1 import s1o1
 from Chapter1 import s2o1
 from Chapter1 import s3o1
 
+def print(inp):
+    print(inp)
+    time.sleep(1.7)
+
 def start():
     print("21 DAYS")
     time.sleep(4)
