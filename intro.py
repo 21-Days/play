@@ -1,9 +1,13 @@
 def part1():
-    input("press ENTER to proceed.")
-    input("RACHEL: That party was SOO crazy, man.")
-    input("RACHEL: I'm gonna go home. You look pretty high. I'm not sure, but I think you might have had some acid.")
-    input("RACHEL: Alright, let's see... How should I find out how high you are?")
-    input("RACHEL: Oh! I know, what's your name?")
+    print("RACHEL: That party was SOO crazy, man.")
+    time.sleep(1)
+    print("RACHEL: I'm gonna go home. You look pretty delirious. I'm not sure, but I think you might have had something.")
+    time.sleep(1)
+    print("RACHEL: Alright, let's see... hm... how delirious ARE you?")
+    time.sleep(1)
+    print("...")
+    time.sleep(1)
+    print("RACHEL: Oh! I know, can you remember your name?")
 
 def part2(name):
     input("At least you're not totally oblivious. Still, " + name + ", you should let me walk you home.")
@@ -18,4 +22,4 @@ def part2(name):
     input("RACHEL: Are you okay? You look scared.")
     input("RACHEL: It's ok, I'll stay with you the whole time. You don't have to be scared.")
     input("YOU: It's okay, you go on. I'll catch up with you.")
-    input("RACHEL: But you don't even know the way through!")
+    print("RACHEL: But you don't even know the way through!")
