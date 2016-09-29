@@ -10,12 +10,12 @@ def read():
 	int=0
 	section=story[int]
 	line=story[int]
-	while(line!="*END*")
-		int+=1
-		line=story[int]
-		print(line)
-		jk
-	j
+	
+		while(line!="*END*")
+			int+=1
+			line=story[int]
+			input(line)
+	return "done"
 
 def start():
 	print("21 DAYS")
