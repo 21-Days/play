@@ -14,7 +14,8 @@ def read():
 		int+=1
 		line=story[int]
 		print(line)
-		
+		jk
+	j
 
 def start():
 	print("21 DAYS")
