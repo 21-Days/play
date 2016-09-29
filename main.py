@@ -4,8 +4,17 @@ from Chapter1 import s1o1
 from Chapter1 import s2o1
 from Chapter1 import s3o1
 
-def reader():
-	
+def read():
+	file=open("storyline.txt", 'r')
+	story=file.readlines()
+	int=0
+	section=story[int]
+	line=story[int]
+	while(line!="*END*")
+		int+=1
+		line=story[int]
+		print(line)
+		
 
 def start():
 	print("21 DAYS")
