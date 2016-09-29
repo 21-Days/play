@@ -1,18 +1,35 @@
 import time
 
+global currentSection
+global file
+
 def read():
 	file=open("storyline.txt", 'r')
 	story=file.readlines()
 	int=0
 	section=story[int]
 	line=story[int]
+	while(true):
 		while("*END*" not in line)
 			line=story[int]
 			if("INPUT" in line)
-				var=input()
-			else:	
+				var=input(line.replace("INPUT ", ""))
+			elif("SECTION:" in line):
+				cu=line.replace("SECTION: ", "")
+				cus=cu.replace(".", " ")
+				currS=cus.split(' ', 1)
+				chapter=currS.get[0]
+				scene=currS.get[1]
+				option=currS.get[2]
+				print("CHAPTER "+chapter+", SCENE "+scene+", OPTION "+option)
+				time.wait(3)
+			elif():
+			elif():
+			elif():
+			else:
 				input(line)
 			int=int+1
+		
 	return "done"
 
 def start():
