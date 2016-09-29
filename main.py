@@ -5,7 +5,7 @@ from Chapter1 import s2o1
 from Chapter1 import s3o1
 
 def reader():
-	
+
 
 def start():
     print("21 DAYS")
