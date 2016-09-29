@@ -6,7 +6,21 @@ RACHEL: Alright, let's see... hm... how delirious ARE you?
 ...
 "RACHEL: Oh! I know, can you remember your name?"
 INPUT
-"At least you're not totally oblivious. Still, " + name + ", you should let me walk you home."
+At least you're not totally oblivious. Still, + name + , you should let me walk you home.
+The soles of your sneakers scrape against the sidewalk, making noticeable squeaks against the silent background of the suburbs.
+
+
+
+Rachel guides you towards the forest.
+You try to struggle, knowing that it's dangerous.
+You remember campfire stories about this forest.
+Your tripping mind amplifies these memories, as if you were there.
+You see faces flash before you.
+It's as if you are in a first person horror movie.
+RACHEL: Are you okay? You look scared.
+RACHEL: It's ok, I'll stay with you the whole time. You don't have to be scared.
+YOU: It's okay, you go on. I'll catch up with you.
+RACHEL: But you don't even know the way through!
 *END*
 
 s1o1
