@@ -1,6 +1,8 @@
+import main
+
 def way0(name):
-    input("YOU: It's okay, I got it.")
-    input("Rachel fades into the darkness and you are left alone.")
+    input.print("YOU: It's okay, I got it.")
+    input.print("Rachel fades into the darkness and you are left alone.")
     input("Moments later, you hear a scream.")
     input("What happened, you think.")
     input("Your vision is fading.")
