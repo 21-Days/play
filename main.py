@@ -1,8 +1,4 @@
 import time
-import intro
-from Chapter1 import s1o1
-from Chapter1 import s2o1
-from Chapter1 import s3o1
 
 def read():
 	file=open("storyline.txt", 'r')
@@ -10,11 +6,13 @@ def read():
 	int=0
 	section=story[int]
 	line=story[int]
-	
-		while(line!="*END*")
-			int+=1
+		while("*END*" not in line)
 			line=story[int]
-			input(line)
+			if("INPUT" in line)
+				var=input()
+			else:	
+				input(line)
+			int=int+1
 	return "done"
 
 def start():
@@ -26,9 +24,9 @@ def start():
 	print("CHAPTER 1, SCENE 1, OPTION 0")
 	time.sleep(3)
 	intro.part1()
-	name = response = input("What's your name?")
+	name = input("What's your name?")
 	while name == "":
-		name = response = input("What's your name?")
+		name = input("What's your name?")
 	intro.part2(name)
 	ahead = response = input('Are you sure you want her to go ahead?')
 	while ahead.upper() != 'YES' and ahead.upper() != 'Y' and ahead.upper() != 'NO' and ahead.upper() != 'N':
