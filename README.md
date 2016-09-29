@@ -1,5 +1,5 @@
 # 21-Days
-This is 21 Days, a game created by Roadkillsanta and others who havent joined github yet.
+This is 21 Days, a game created by Roadkillsanta as well as other people who havent joined github yet.
 
 Visit Us at www.21days.ml
 
