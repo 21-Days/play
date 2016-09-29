@@ -1,1 +1,11 @@
+INTRO
+RACHEL: That party was SOO crazy, man.
+RACHEL: I'm gonna go home. You look pretty delirious. I'm not sure, but I think you might have had something.
+RACHEL: Alright, let's see... hm... how delirious ARE you?
+...
+"RACHEL: Oh! I know, can you remember your name?"
+INPUT
+"At least you're not totally oblivious. Still, " + name + ", you should let me walk you home."
 
+s1o1
+"YOU: It's okay, I got it."
