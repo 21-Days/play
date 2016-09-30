@@ -62,7 +62,7 @@ def interpreter(fille, split):
 			file.seek(ple, 0)
 		elif(line=="*START*"):
 		elif(line=="*END*"):
-			print()
+			
 		else:
 			input(line)
 		int=int+1
