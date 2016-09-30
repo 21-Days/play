@@ -33,4 +33,6 @@ Planned Updates:
 
 	-Replace Master Branch
 
+# StoryScript Docs
 
+The main Documentation for StoryScript is located at: www.21days.ml/StoryScript
