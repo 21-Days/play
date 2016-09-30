@@ -3,7 +3,7 @@ import time
 global currentSection
 global file
 
-def read():
+def interpreter():
 	temp=open("temp.txt", 'wb')
 	file=open("storyline.txt", 'r')
 	story=file.readlines()
@@ -44,7 +44,7 @@ def read():
 		else:
 			input(line)
 		int=int+1
-	return "done"
+	input("Thanks for playing!")
 def start():
 	print("21 DAYS")
 	time.sleep(4)
