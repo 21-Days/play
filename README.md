@@ -14,7 +14,7 @@ New Updates:
 
 	-Added Ability to read and differentiate chapters
 
-	-Added Storyline.txt (Complete Story and Chapters)
+	-Added Storyline.txt (Complete Intro and beginning)
 
 	-Removed Story Scene py files
  
