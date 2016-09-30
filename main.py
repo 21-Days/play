@@ -7,39 +7,35 @@ def read():
 	file=open("storyline.txt", 'r')
 	story=file.readlines()
 	int=0
-	section=story[int]
-	line=story[int]
-	while(true):
-		while("*END*" not in line)
-			line=story[int]
-			if("INPUT" in line)
-				var=input(line.replace("INPUT ", ""))
-			elif("SECTION:" in line):
-				cu=line.replace("SECTION: ", "")
-				cus=cu.replace(".", " ")
-				currS=cus.split(' ', 1)
-				chapter=currS.get[0]
-				scene=currS.get[1]
-				option=currS.get[2]
-				print("CHAPTER "+chapter+", SCENE "+scene+", OPTION "+option)
-				time.wait(3)
-			elif():
-			elif():
-			elif():
-			else:
-				input(line)
-			int=int+1
-		
+	while(True)
+		line=story[int]
+		if("INPUT" in line)
+			foo=line.replace("INPUT ", "")
+			var=input(foo)
+			while(var==""):
+				var=input(foo)
+		elif("SECTION:" in line):
+			cu=line.replace("SECTION: ", "")
+			cus=cu.replace(".", " ")
+			currS=cus.split(' ', 1)
+			chapter=currS.get[0]
+			scene=currS.get[1]
+			option=currS.get[2]
+			print("CHAPTER "+chapter+", SCENE "+scene+", OPTION "+option)
+			time.wait(3)
+		elif("+" in line):
+			
+		elif():
+		elif():
+		else:
+			input(line)
+		int=int+1
 	return "done"
-
 def start():
 	print("21 DAYS")
 	time.sleep(4)
 	print("A GAME MADE BY WILL JOHNSON AND JONATHAN ZHANG")
 	print("SPECIAL THANKS TO ERIC NIE")
-	time.sleep(3)
-	print("CHAPTER 1, SCENE 1, OPTION 0")
-	time.sleep(3)
 	intro.part1()
 	name = input("What's your name?")
 	while name == "":
