@@ -3,20 +3,28 @@ import time
 global currentSection
 global file
 
-def interpreter():
+def interpreter(fille, split):
+	if(split!=""):
+		if(split.upper()=="WAY0" or split.upper()=="WAY 0")
+		
+		elif(split.upper()=="WAY1" or split.upper()=="WAY 1")
+			
+		else:
+			input("ERROR")
+			exit()
 	temp=open("temp.txt", 'wb')
-	file=open("storyline.txt", 'r')
+	file=open(fille, 'r')
 	story=file.readlines()
 	int=0
 	while(True)
 		line=story[int]
-		if("INPUT" in line)
-			foo=line.replace("INPUT ", "")
+		if("INPUT" in line.upper())
+			foo=line.upper().replace("INPUT ", "")
 			lsts=foo.split(',', 1)
 			while(var==""):
 				var=input(lsts.get[0])
 			temp.write(lsts.get[1]+"="+var)
-		elif("SECTION:" in line):
+			elif("SECTION:" in line.upper()):
 			cu=line.replace("SECTION: ", "")
 			cus=cu.replace(".", " ")
 			currS=cus.split(' ', 1)
@@ -39,15 +47,20 @@ def interpreter():
 			lolls=jklm.replace(jkl+"=", "")
 			loolls=line.replace("+ "+jkl+" +", lolls)
 			input(loolls)
-		elif("SPLIT " in line):
-			k=line.replace("SPLIT ", "")
-			f=open(k,'r')
-			
+		elif("SPLIT " in line.upper()):
+			jklomp=line.replace("SPLIT ", "")
+			jollo=jklomp.split(',' ,1)
+			jol=jollo.get[0]
+			llo=jollo.get[1]
+			interpreter(jol, llo)
 		elif():
 		else:
 			input(line)
 		int=int+1
-	input("Thanks for playing!")
+		print("THANKS FOR PLAYING!")
+	input("THANKS FOR PLAYING")
+	temp.close()
+	file.close()
 def start():
 	print("21 DAYS")
 	time.sleep(4)
