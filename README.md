@@ -25,7 +25,7 @@ Planned Updates:
 
 	-Write story in selection of files
 
-	-Make 'StoryScript' an official language in 21 Days
+	-Make 'StoryScript' the official language for 21 Days
 
 	-Expand 'StoryScript' abilities
 
