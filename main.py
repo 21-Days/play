@@ -31,8 +31,11 @@ def interpreter():
 			j.pop(1)
 			jkl=j.get[0]
 			jklm=temp.readline()
-			while(!jkl in jklm)
+			while(jkl not in jklm)
 				jklm=temp.readline()
+				if(jklm="")
+					input("ERROR FILE COULD NOT BE READ")
+					exit()
 			lolls=jklm.replace(jkl+"=", "")
 			loolls=line.replace("+ "+jkl+" +", lolls)
 			input(loolls)
