@@ -4,6 +4,7 @@ global currentSection
 global file
 
 def interpreter(fille, split):
+	
 	if(split!=""):
 		if(split.upper()=="WAY0" or split.upper()=="WAY 0")
 			file=open(fille+"0.txt",r)
@@ -12,8 +13,9 @@ def interpreter(fille, split):
 		else:
 			input("ERROR")
 			exit()
+	else:
+		file=open(fille, 'r')
 	temp=open("temp.txt", 'wb')
-	file=open(fille, 'r')
 	story=file.readlines()
 	int=0
 	while(True)
@@ -23,6 +25,7 @@ def interpreter(fille, split):
 			lsts=foo.split(',', 1)
 			while(var==""):
 				var=input(lsts.get[0])
+			temp.seek(0, 2)
 			temp.write(lsts.get[1]+"="+var)
 			elif("SECTION:" in line.upper()):
 			cu=line.replace("SECTION: ", "")
@@ -42,7 +45,7 @@ def interpreter(fille, split):
 			while(jkl not in jklm)
 				jklm=temp.readline()
 				if(jklm="")
-					input("ERROR FILE COULD NOT BE READ")
+					input("ERROR! FILE COULD NOT BE READ!")
 					exit()
 			lolls=jklm.replace(jkl+"=", "")
 			loolls=line.replace("+ "+jkl+" +", lolls)
@@ -57,10 +60,12 @@ def interpreter(fille, split):
 			lomlom=line.replace("SKIP ", "")
 			ple=Int(lomlom)
 			file.seek(ple, 0)
+		elif(line=="*START*"):
+		elif(line=="*END*"):
+			print()
 		else:
 			input(line)
 		int=int+1
-		print("THANKS FOR PLAYING!")
 	input("THANKS FOR PLAYING")
 	temp.close()
 	file.close()
