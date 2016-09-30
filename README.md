@@ -7,7 +7,7 @@ Visit Us at www.21days.ml
 
 21 Days is a decision-making text based game in which they must hide from an evil alias that was spawned in their infinite tripping world that is nearly inescapable. What would you do?
 
-# Updates:
+# Updates (For this branch):
 New Updates:
 
 	-Added limited 'StoryScript' text code functions
