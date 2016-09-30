@@ -4,6 +4,7 @@ global currentSection
 global file
 
 def read():
+	temp=open("temp.txt", 'wb')
 	file=open("storyline.txt", 'r')
 	story=file.readlines()
 	int=0
@@ -11,9 +12,10 @@ def read():
 		line=story[int]
 		if("INPUT" in line)
 			foo=line.replace("INPUT ", "")
-			var=input(foo)
+			lsts=foo.split(',', 1)
 			while(var==""):
-				var=input(foo)
+				var=input(lsts.get[0])
+			temp.write(lsts.get[1]+"="+var)
 		elif("SECTION:" in line):
 			cu=line.replace("SECTION: ", "")
 			cus=cu.replace(".", " ")
@@ -23,9 +25,21 @@ def read():
 			option=currS.get[2]
 			print("CHAPTER "+chapter+", SCENE "+scene+", OPTION "+option)
 			time.wait(3)
-		elif("+" in line):
+		elif("+ " and " +" in line):
+			j=line.split(' + ', 1)
+			j.pop(0)
+			j.pop(1)
+			jkl=j.get[0]
+			jklm=temp.readline()
+			while(!jkl in jklm)
+				jklm=temp.readline()
+			lolls=jklm.replace(jkl+"=", "")
+			loolls=line.replace("+ "+jkl+" +", lolls)
+			input(loolls)
+		elif("SPLIT " in line):
+			k=line.replace("SPLIT ", "")
+			f=open(k,'r')
 			
-		elif():
 		elif():
 		else:
 			input(line)
