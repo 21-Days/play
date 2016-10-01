@@ -4,7 +4,6 @@ global currentSection
 global file
 
 def interpreter(fille, split):
-	
 	if(split!=""):
 		if(split.upper()=="WAY0" or split.upper()=="WAY 0")
 			file=open("/Resources/"+fille+"0.txt",r)
@@ -27,7 +26,7 @@ def interpreter(fille, split):
 				var=input(lsts.get[0])
 			temp.seek(0, 2)
 			temp.write(lsts.get[1]+"="+var)
-			elif("SECTION:" in line.upper()):
+		elif("SECTION:" in line):
 			cu=line.replace("SECTION: ", "")
 			cus=cu.replace(".", " ")
 			currS=cus.split(' ', 1)
@@ -57,8 +56,8 @@ def interpreter(fille, split):
 			llo=jollo.get[1].upper()
 			interpreter(jol, llo)
 		elif("SKIP" in line):
-			lomlom=line.replace("SKIP ", "")
-			ple=Int(lomlom)
+			lomlom=str(line.replace("SKIP ", ""))
+			ple= int(lomlom)
 			file.seek(ple, 0)
 		elif(line=="*START*"):
 		elif(line=="*END*"):
