@@ -1,5 +1,5 @@
 # 21-Days
-This is 21 Days, a game created by Roadkillsanta, GoobysTheName, and JZNG.
+This is 21 Days, a game created by Roadkillsanta, GoobysTheName, and JZCS.
 
 Visit Us at www.21days.ml
 
