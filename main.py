@@ -7,9 +7,9 @@ def interpreter(fille, split):
 	
 	if(split!=""):
 		if(split.upper()=="WAY0" or split.upper()=="WAY 0")
-			file=open(fille+"0.txt",r)
+			file=open("/Resources/"+fille+"0.txt",r)
 		elif(split.upper()=="WAY1" or split.upper()=="WAY 1")
-			file=open(fille+"1.txt",r)
+			file=open("/Resources/"+fille+"1.txt",r)
 		else:
 			input("ERROR")
 			exit()
@@ -53,8 +53,8 @@ def interpreter(fille, split):
 		elif("SPLIT " in line):
 			jklomp=line.replace("SPLIT ", "")
 			jollo=jklomp.split(',' ,1)
-			jol=jollo.get[0]
-			llo=jollo.get[1]
+			jol=jollo.get[0].upper()
+			llo=jollo.get[1].upper()
 			interpreter(jol, llo)
 		elif("SKIP" in line):
 			lomlom=line.replace("SKIP ", "")
