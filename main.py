@@ -6,9 +6,9 @@ global file
 def interpreter(fille, split):
 	if(split!=""):
 		if(split.upper()=="WAY0" or split.upper()=="WAY 0")
-			file=open("/Resources/"+fille+"0.txt",r)
+			file=open("/Resources/"+fille+"-0.txt",r)
 		elif(split.upper()=="WAY1" or split.upper()=="WAY 1")
-			file=open("/Resources/"+fille+"1.txt",r)
+			file=open("/Resources/"+fille+"-1.txt",r)
 		else:
 			input("ERROR")
 			exit()
@@ -59,6 +59,11 @@ def interpreter(fille, split):
 			lomlom=str(line.replace("SKIP ", ""))
 			ple= int(lomlom)
 			file.seek(ple, 0)
+		elif("IF" in line.upper()):
+		elif():
+		elif():
+		elif():
+		elif():
 		elif(line=="*START*"):
 		elif(line=="*END*"):
 			
