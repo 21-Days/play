@@ -36,9 +36,9 @@ def interpreter(fille, split):
 			chapter=currS.get[0]
 			scene=currS.get[1]
 			option=currS.get[2]
-			print("CHAPTER "+chapter+", SCENE "+scene+", OPTION "+option)
-			temp.seek(0)
-			temp.write("currentSection="+cu)
+			finncS=str("CHAPTER "+chapter+", SCENE "+scene+", OPTION "+option)
+			print(finncS)
+			currentSection=finncS
 			time.wait(3)
 		elif("+ " and " +" in line):
 			j=line.split(' + ', 1)
