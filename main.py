@@ -1,8 +1,8 @@
-	import time
-	import intro
-	from Chapter1 import s1o1
-	from Chapter1 import s2o1
-	from Chapter1 import s3o1
+import time
+import intro
+from Chapter1 import s1o1
+from Chapter1 import s2o1
+from Chapter1 import s3o1
 
 def print(inp):
 	print(inp)
