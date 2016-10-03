@@ -2,6 +2,7 @@ import time
 
 global currentSection
 global file
+global exitcode
 
 def interpreter(fille, split):
 	if(split!=""):
@@ -13,15 +14,12 @@ def interpreter(fille, split):
 			input("ERROR")
 			exit()
 	else:
-		print("21 DAYS")
-		time.sleep(4)
-		print("A GAME MADE BY EN, WJ, JZ")
 		file=open(fille, 'r')
 	temp=open("temp.txt", 'wb')
 	story=file.readlines()
 	int=0
+	line=story[int]
 	while(True)
-		line=story[int]
 		if("INPUT" in line)
 			foo=line.upper().replace("INPUT ", "")
 			lsts=foo.split(',', 1)
@@ -50,7 +48,7 @@ def interpreter(fille, split):
 				jklm=temp.readline()
 				if(jklm="")
 					input("ERROR! FILE COULD NOT BE READ!")
-					exit()
+					exitcode=1
 			lolls=jklm.replace(jkl+"=", "")
 			loolls=line.replace("+ "+jkl+" +", lolls)
 			input(loolls)
@@ -64,19 +62,35 @@ def interpreter(fille, split):
 			lomlom=str(line.replace("SKIP ", ""))
 			ple= int(lomlom)
 			file.seek(ple, 0)
-		elif("IF" in line.upper()):
+		elif("python" in line.lower()):
+			kmslol=line.lower().replace("python(","")
+			lolsmk=kmslol.replace(")","")
+			filelele=open("run.py", "wb")
+			k="""
+def run():
+	"""+lolsmk+""""""
+			filelele.write(k)
+			if(args):
+				import run
+				run.run()
 		elif():
 		elif():
 		elif():
-		elif():
+		elif(line=="FINAL"):
+			exitcode=0
 		elif(line=="*START*"):
 		elif(line=="*END*"):
-			
 		else:
 			input(line)
-		int=int+1
-	input("THANKS FOR PLAYING")
 	temp.close()
 	file.close()
+	return exitcode
+def run():
+	print("21 DAYS")
+	time.sleep(4)
+	print("A GAME MADE BY EN, WJ, JZ")
+	interpreter()
+	input("THANKS FOR PLAYING")
+
 class main():
 	interpreter("storyline.txt")
