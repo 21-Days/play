@@ -7,7 +7,7 @@ Visit Us at www.21days.ml
 
 21 Days is a decision-making text based game in which they must hide from an evil alias that was spawned in their infinite tripping world that is nearly inescapable. What would you do?
 
-# Updates (For this branch):
+# Updates:
 New Updates:
 
 	-Added limited 'StoryScript' text code functions
@@ -35,7 +35,7 @@ Planned Updates:
 
 # StoryScript Docs
 
-The main Documentation for StoryScript is located at: www.21days.ml/StoryScript.html
+The main Documentation for StoryScript is located at: 21days.RGTN.ml/StoryScript.html
 
 QuickLinks:
 
