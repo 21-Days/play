@@ -1,7 +1,7 @@
 # 21-Days
 This is 21 Days, a game created by Roadkillsanta, GoobysTheName, and JZCS.
 
-Visit Us at www.21days.ml
+Visit Us at http://21days.RGTN.ml
 
 21 Days is currently under construction.
 
@@ -35,7 +35,7 @@ Planned Updates:
 
 # StoryScript Docs
 
-The main Documentation for StoryScript is located at: 21days.RGTN.ml/StoryScript.html
+The main Documentation for StoryScript is located at: http://21days.RGTN.ml/StoryScript.html
 
 QuickLinks:
 
