@@ -68,12 +68,15 @@ def interpreter(fille, split):
 			filelele=open("run.py", "wb")
 			k="""
 def run():
-	"""+lolsmk+""""""
+	"""+lolsmk+"""
+#THIS IS ONLY TEMPORARY..."""
 			filelele.write(k)
 			if(args):
 				import run
 				run.run()
-		elif():
+		elif("RNDS" in line):
+			argggggggggghhhs=line.replace("RNDS ", "").replace(" ","").split(',', 1)
+			random.randint(argggggggggghhhs.get[0], argggggggggghhhs.get[1])
 		elif():
 		elif():
 		elif(line=="FINAL"):
