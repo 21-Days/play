@@ -10,28 +10,27 @@ Visit Us at http://21days.RGTN.ml
 # Updates:
 New Updates:
 
-	-Added limited 'StoryScript' text code functions
+	-Merged Master and Modded branch
 
-	-Added Ability to read and differentiate chapters
+	-Added ability to execute python code when needed
 
-	-Added Storyline.txt (Complete Intro and beginning)
+	-Added splitting ability
 
-	-Removed Story Scene py files
- 
+	-Created OLD folder for execution in case the StoryScript interpreter fails
  
 Planned Updates:
 
-	-Add Forking point ablility in 'StoryScript' with fork story files
-
-	-Write story in selection of files
-
-	-Make 'StoryScript' the official language for 21 Days
+	-Write story completely in StoryScript
+	
+	-Transcript Scene python files into StoryScript
+	
+	-Add generator ability to randomly generate portions of the story.
 
 	-Expand 'StoryScript' abilities
 
-	-Rename main.py to compiler.py
-
-	-Replace Master Branch
+	-Add Death or Story Ending points
+	
+	-Add graphical interface with Java or Tkinter
 
 # StoryScript Docs
 
@@ -43,5 +42,7 @@ UNDER CONSTRUCTION
 
 # Credits
 Roadkillsanta
-TheNamesGooby
+
+GoobysTheName
+
 JNZG
