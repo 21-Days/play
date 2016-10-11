@@ -40,3 +40,8 @@ The main Documentation for StoryScript is located at: http://21days.RGTN.ml/Stor
 QuickLinks:
 
 UNDER CONSTRUCTION
+
+# Credits
+Roadkillsanta
+TheNamesGooby
+JNZG
