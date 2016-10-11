@@ -7,7 +7,7 @@ Visit Us at http://21days.RGTN.ml
 
 21 Days is a decision-making text based game in which they must hide from an evil alias that was spawned in their infinite tripping world that is nearly inescapable. What would you do?
 
-# Updates:
+# Updates
 New Updates:
 
 	-Merged Master and Modded branch
