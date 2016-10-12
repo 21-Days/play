@@ -19,8 +19,8 @@ def interpreter(fille, split):
 	story=file.readlines()
 	int=0
 	line=story[int]
-	while(True)
-		if("INPUT" in line)
+	while(exitcode not 0):
+		if("INPUT" in line):
 			foo=line.upper().replace("INPUT ", "")
 			lsts=foo.split(',', 1)
 			while(var==""):
@@ -75,14 +75,16 @@ def run():
 				import run
 				run.run()
 			filelele.close()
-		elif("RNDS" in line):
-			argggggggggghhhs=line.replace("RNDS ", "").replace(" ","").split(',', 1)
-			random.randint(argggggggggghhhs[0], argggggggggghhhs[1])
-		elif():
-		elif():
+		elif("RND" in line):
+			arggggggghhhs=line.replace(" ","").replace("RND(", "").replace(")","").split(',', 1)
+			random.randint(arggggggghhhs[0], arggggggghhhs[1])
+		elif("" in line):
+		elif("" in line):
 		elif(line=="FINAL"):
 			exitcode=0
+			break
 		elif(line=="*START*"):
+			active=True
 		elif(line=="*END*"):
 		else:
 			input(line)
