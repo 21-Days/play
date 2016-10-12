@@ -24,16 +24,16 @@ def interpreter(fille, split):
 			foo=line.upper().replace("INPUT ", "")
 			lsts=foo.split(',', 1)
 			while(var==""):
-				var=input(lsts.get[0])
+				var=input(lsts[0])
 			temp.seek(0, 2)
-			temp.write(lsts.get[1]+"="+var)
+			temp.write(lsts[1]+"="+var)
 		elif("SECTION:" in line):
 			cu=line.replace("SECTION: ", "")
 			cus=cu.replace(".", " ")
 			currS=cus.split(' ', 1)
-			chapter=currS.get[0]
-			scene=currS.get[1]
-			option=currS.get[2]
+			chapter=currS[0]
+			scene=currS[1]
+			option=currS[2]
 			finncS=str("CHAPTER "+chapter+", SCENE "+scene+", OPTION "+option)
 			print(finncS)
 			currentSection=finncS
@@ -42,7 +42,7 @@ def interpreter(fille, split):
 			j=line.split(' + ', 1)
 			j.pop(0)
 			j.pop(1)
-			jkl=j.get[0]
+			jkl=j[0]
 			jklm=temp.readline()
 			while(jkl not in jklm)
 				jklm=temp.readline()
@@ -55,8 +55,8 @@ def interpreter(fille, split):
 		elif("SPLIT " in line):
 			jklomp=line.replace("SPLIT ", "")
 			jollo=jklomp.split(',' ,1)
-			jol=jollo.get[0].upper()
-			llo=jollo.get[1].upper()
+			jol=jollo[0].upper()
+			llo=jollo[1].upper()
 			interpreter(jol, llo)
 		elif("SKIP" in line):
 			lomlom=str(line.replace("SKIP ", ""))
@@ -77,7 +77,7 @@ def run():
 			filelele.close()
 		elif("RNDS" in line):
 			argggggggggghhhs=line.replace("RNDS ", "").replace(" ","").split(',', 1)
-			random.randint(argggggggggghhhs.get[0], argggggggggghhhs.get[1])
+			random.randint(argggggggggghhhs[0], argggggggggghhhs[1])
 		elif():
 		elif():
 		elif(line=="FINAL"):
