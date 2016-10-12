@@ -6,9 +6,9 @@ global exitcode
 
 def interpreter(fille, split):
 	if(split!=""):
-		if(split.upper()=="WAY0" or split.upper()=="WAY 0")
+		if(split.upper()=="WAY0" or split.upper()=="WAY 0" or split.upper()=="0")
 			file=open("/Resources/"+fille+"-0.txt",r)
-		elif(split.upper()=="WAY1" or split.upper()=="WAY 1")
+		elif(split.upper()=="WAY1" or split.upper()=="WAY 1" or split.upper()=="1")
 			file=open("/Resources/"+fille+"-1.txt",r)
 		else:
 			input("ERROR")
