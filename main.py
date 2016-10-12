@@ -74,6 +74,7 @@ def run():
 			if(args):
 				import run
 				run.run()
+			filelele.close()
 		elif("RNDS" in line):
 			argggggggggghhhs=line.replace("RNDS ", "").replace(" ","").split(',', 1)
 			random.randint(argggggggggghhhs.get[0], argggggggggghhhs.get[1])
@@ -85,6 +86,7 @@ def run():
 		elif(line=="*END*"):
 		else:
 			input(line)
+		int+=1
 	temp.close()
 	file.close()
 	return exitcode
