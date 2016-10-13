@@ -38,7 +38,8 @@ Planned Updates:
 
 # StoryScript Docs
 
-The main Documentation for StoryScript is located at: http://21days.RGTN.ml/StoryScript.html
+WARNING, DOCS NOT UPDATED!
+(The main Documentation for StoryScript is located at: http://21days.RGTN.ml/StoryScript.html)
 
 QuickLinks:
 
