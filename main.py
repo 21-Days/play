@@ -22,20 +22,7 @@ def interpreter(fille, split, loadgame, section):
 	int=0
 	line=story[int]
 	while(exitcode not 0):
-		if(loadgame==True):
-			print("Loading Save...")
-			corrupt=False
-			while(section not in line):
-				int+=1
-				if(line=="FINAL"):
-					corrupt=True
-					input("ERROR! SaveFile Corrupted!")
-					if("Y" in input("Delete Corrupted SaveFile? (Y/N)").upper()):
-						
-					else:
-						
-			print("Save Loaded.")
-		elif("INPUT" in line):
+		if("INPUT" in line):
 			foo=line.upper().replace("INPUT ", "")
 			lsts=foo.split(',', 1)
 			while(var==""):
