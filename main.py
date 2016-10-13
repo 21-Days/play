@@ -4,12 +4,6 @@ global currentSection
 global file
 global exitcode
 
-def savegame(file, section):
-	file=open("save.txt", "wb")
-	file.write(file)
-	file.seek(1,0)
-	file.write(section)
-	file.close()
 def interpreter(fille, split, loadgame, section):
 	if(split!=""):
 		if(split.upper()=="WAY0" or split.upper()=="WAY 0" or split.upper()=="0")
@@ -30,8 +24,16 @@ def interpreter(fille, split, loadgame, section):
 	while(exitcode not 0):
 		if(loadgame==True):
 			print("Loading Save...")
+			corrupt=False
 			while(section not in line):
-				int++
+				int+=1
+				if(line=="FINAL"):
+					corrupt=True
+					input("ERROR! SaveFile Corrupted!")
+					if("Y" in input("Delete Corrupted SaveFile? (Y/N)").upper()):
+						
+					else:
+						
 			print("Save Loaded.")
 		elif("INPUT" in line):
 			foo=line.upper().replace("INPUT ", "")
@@ -109,16 +111,11 @@ def run():
 	temp.close()
 	file.close()
 	return exitcode
-def loadgame():
-	file=open("save.txt", "r")
-	listthing=file.readlines()
-	currentfile=listthing[0]
-	section=listthing[1]
-	interpreter(currentfile,"", True,section)
 def start():
 	print("21 DAYS")
 	time.sleep(4)
 	print("A GAME MADE BY EN, WJ, JZ")
+	
 	interpreter("storyline.txt")
 	input("THANKS FOR PLAYING")
 
