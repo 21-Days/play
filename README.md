@@ -18,8 +18,10 @@ New Updates:
 
 	-Created OLD folder for execution in case the StoryScript interpreter fails
 	
-	-Added Save and Loadgame Feature
- 
+	-Improved Save/Loadgame Feature
+ 	
+	-Added Death/Story Ending points
+	
 Planned Updates:
 
 	-Write story completely in StoryScript
@@ -29,8 +31,6 @@ Planned Updates:
 	-Add generator ability to randomly generate portions of the story.
 
 	-Expand 'StoryScript' abilities
-
-	-Add Death or Story Ending points
 	
 	-Add graphical interface with Java or Tkinter
 	
