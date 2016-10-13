@@ -17,6 +17,8 @@ New Updates:
 	-Added splitting ability
 
 	-Created OLD folder for execution in case the StoryScript interpreter fails
+	
+	-Added Save and Loadgame Feature
  
 Planned Updates:
 
@@ -31,6 +33,8 @@ Planned Updates:
 	-Add Death or Story Ending points
 	
 	-Add graphical interface with Java or Tkinter
+	
+	-Implement Save/Loadgame Feature
 
 # StoryScript Docs
 
