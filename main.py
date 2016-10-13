@@ -4,15 +4,23 @@ global currentSection
 global file
 global exitcode
 
-def interpreter(fille, split):
+def savegame(file, section):
+	file=open("save.txt", "wb")
+	file.write(file)
+	file.seek(1,0)
+	file.write(section)
+	file.close()
+def interpreter(fille, split, loadgame, section):
 	if(split!=""):
 		if(split.upper()=="WAY0" or split.upper()=="WAY 0" or split.upper()=="0")
-			file=open("/Resources/"+fille+"-0.txt",r)
+			file=open("/Resources/"+fille+"-0.txt","r")
 		elif(split.upper()=="WAY1" or split.upper()=="WAY 1" or split.upper()=="1")
-			file=open("/Resources/"+fille+"-1.txt",r)
+			file=open("/Resources/"+fille+"-1.txt","r")
 		else:
 			input("ERROR")
 			exit()
+	elif(loadgame==True):
+		file=open("/Resources/"+fille,"r")
 	else:
 		file=open(fille, 'r')
 	temp=open("temp.txt", 'wb')
@@ -20,7 +28,12 @@ def interpreter(fille, split):
 	int=0
 	line=story[int]
 	while(exitcode not 0):
-		if("INPUT" in line):
+		if(loadgame==True):
+			print("Loading Save...")
+			while(section not in line):
+				int++
+			print("Save Loaded.")
+		elif("INPUT" in line):
 			foo=line.upper().replace("INPUT ", "")
 			lsts=foo.split(',', 1)
 			while(var==""):
@@ -79,7 +92,8 @@ def run():
 			arggggggghhhs=line.replace(" ","").replace("RND(", "").replace(")","").split(',', 1)
 			random.randint(arggggggghhhs[0], arggggggghhhs[1])
 		elif("" in line):
-		elif("" in line):
+		elif("SAVE" in line.upper()):
+			
 		elif(line=="FINAL"):
 			exitcode=0
 			break
@@ -87,17 +101,26 @@ def run():
 			active=True
 		elif(line=="*END*"):
 		else:
-			input(line)
+			inesa=input(line)
+			if("exit" in inesa.lower()):
+				exitcode
+			elif("save")
 		int+=1
 	temp.close()
 	file.close()
 	return exitcode
-def run():
+def loadgame():
+	file=open("save.txt", "r")
+	listthing=file.readlines()
+	currentfile=listthing[0]
+	section=listthing[1]
+	interpreter(currentfile,"", True,section)
+def start():
 	print("21 DAYS")
 	time.sleep(4)
 	print("A GAME MADE BY EN, WJ, JZ")
-	interpreter()
+	interpreter("storyline.txt")
 	input("THANKS FOR PLAYING")
 
 class main():
-	interpreter("storyline.txt")
+	start()
